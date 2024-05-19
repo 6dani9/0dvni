@@ -1,0 +1,185 @@
+body{
+  background-color: rgb(0, 0, 0);
+  scroll-behavior: smooth;
+  background-image: url('/pikaso_texttoimage_3d-model-Chilling-3D-lowpolygon-grayscale-landscapeee.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
+  
+
+}
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+::selection {
+background: rgba(84, 82, 82, 0.544);
+}
+.xf{
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-decoration: none;
+}
+.xf:hover{
+font-size: larger;
+}
+.gvc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh; /* This ensures the containers are centered vertically */
+}
+
+
+
+div.scrollmenu {
+  background-color: #33333300;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  background-color: #00000000;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  filter: drop-shadow(-5px 5px 14px #2c2828);
+}
+.HotspotAnnotation{
+  background-color: rgba(0, 127, 238, 0);
+  border-style: none;
+ 
+}
+.Hotspot{
+  background-color: rgba(0, 0, 0, 0);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size:45px;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  border-style: none;
+  filter: drop-shadow(0px 0px 30px rgb(0, 0, 0)); 
+ 
+}
+
+.Hotspot:hover{
+  font-size: 50px;
+}
+
+.bg {
+position: fixed;
+top: -50%;
+left: -50%;
+right: -50%;
+bottom: -50%;
+width: 200%;
+height: 200vh;
+background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+background-repeat: repeat;
+animation: bg-animation .2s infinite;
+opacity: .9;
+visibility: visible;
+}
+
+@keyframes bg-animation {
+  0% { transform: translate(0,0) }
+  10% { transform: translate(-5%,-5%) }
+  20% { transform: translate(-10%,5%) }
+  30% { transform: translate(5%,-10%) }
+  40% { transform: translate(-5%,15%) }
+  50% { transform: translate(-10%,5%) }
+  60% { transform: translate(15%,0) }
+  70% { transform: translate(0,10%) }
+  80% { transform: translate(-15%,0) }
+  90% { transform: translate(10%,5%) }
+  100% { transform: translate(5%,0) }
+}
+.checked {
+  color: rgb(179, 147, 6);
+  filter: drop-shadow(-5px 5px 14px #ad9a09);
+}
+
+.container{
+  width: 190px;
+  height: 320px;
+  background: rgba(255, 255, 255, 0.27);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.3px);
+-webkit-backdrop-filter: blur(4.3px);
+filter: drop-shadow(-5px 5px 14px #000000);
+display: flex;
+  flex-direction: column;
+
+}
+.new{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:white;
+  font-size: 34px;
+  margin: inherit;
+}
+.top_part {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.namee {
+  font-size: 20px;
+}
+
+.bottom_part {
+  flex: 1;
+}
+
+.desc {
+  font-size: 24px; /* Adjust font size as needed */
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  padding: 10px; /* Adjust padding as needed */
+}
+div.scrollmenu::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Scrollbar Handle */
+div.scrollmenu::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* Color of the scrollbar handle */
+  border-radius: 6px; /* Rounded corners of the scrollbar handle */
+}
+
+/* Scrollbar Track */
+div.scrollmenu::-webkit-scrollbar-track {
+  background: transparent; /* Background color of the scrollbar track */
+}
+
+/* Scrollbar Handle on hover */
+div.scrollmenu:hover::-webkit-scrollbar-thumb {
+  background-color: #555; /* Color of the scrollbar handle on hover */
+}
+.link-container {
+  text-align: center; /* Center the link horizontally */
+  /* Adjust as needed to create space between containers and link */
+}

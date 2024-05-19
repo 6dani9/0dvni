@@ -1,0 +1,224 @@
+body{
+    background-color: rgb(31, 3, 3);
+    scroll-behavior: smooth;
+    background-image: url('/preview.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  overflow: hidden;
+   
+    
+  
+  }
+  ::-webkit-scrollbar {
+  width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  }
+  ::selection {
+  background: rgba(84, 82, 82, 0.544);
+  }
+  .xf{
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  }
+  .xf:hover{
+  font-size: larger;
+  }
+  .gvc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh; /* This ensures the containers are centered vertically */
+  }
+
+  .HotspotAnnotation{
+    background-color: rgba(0, 127, 238, 0);
+    border-style: none;
+   
+  }
+  .Hotspot{
+    background-color: rgba(0, 0, 0, 0);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:45px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    border-style: none;
+    filter: drop-shadow(0px 0px 30px rgb(0, 0, 0)); 
+   
+  }
+  
+  .Hotspot:hover{
+    font-size: 50px;
+  }
+  
+  .bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+  }
+  
+  @keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+  }
+
+  .link-container {
+    text-align: center; /* Center the link horizontally */
+    /* Adjust as needed to create space between containers and link */
+  }
+.stats{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+
+}
+.descr{
+  font-size: 20px;
+  color: rgb(255, 77, 77);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.POINTS{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.sell{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(0, 0, 0, 0);
+ border: none;
+  text-decoration: wavy;
+}
+.cy{
+  text-align: center;
+}
+#game-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+#player {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  filter: drop-shadow(0px 0px 35px rgb(255, 255, 255)); 
+ 
+
+}
+
+#object {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.998);
+  border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
+  filter: drop-shadow(0px 0px 35px rgb(255, 0, 0));
+border-color: red; }
+
+
+
+#score {
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: white;
+} .basket {
+  width: 200px;
+  height: 200px;
+  background-color: #f7d452;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Basketball */
+.basket::before {
+  content: "";
+  width: 120px;
+  height: 120px;
+  background-color: #f00;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Basketball Lines */
+.basket::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.basket::before,
+.basket::after {
+  box-shadow: inset 0 0 0 10px #fff, inset 0 0 0 15px #f00;
+}
+
+/* Player */
+.player {
+  border-color: red;
+  width: 80px;
+  height: 80px;
+  background-color: #000000;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+  z-index: 1;
+}

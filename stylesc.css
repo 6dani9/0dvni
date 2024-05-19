@@ -1,0 +1,478 @@
+body{
+    background-color: rgb(0, 0, 0);
+    scroll-behavior: smooth;
+    background-image: url('/pikaso_texttoimage_3d-model-Disturbing-3D-lowpoly-black-and-white-env.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
+   
+}
+
+.middlee{
+  z-index: 1;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ width: 37vw;
+ height: 37vw;
+ animation: anim 1s linear infinite alternate;
+ filter: drop-shadow(0px 0px 30px rgb(209, 209, 209)); 
+}
+h1{
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 23px;
+  text-align: center;
+  max-width: 800px;
+  background-color: rgb(22, 22, 22);
+  border-radius: 13px;
+}
+.container {
+  background-color: #E0E0E0;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.778);
+}
+
+h2 {
+  text-align: center;
+  color: #333333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(31, 31, 31, 0.436);
+}
+
+label {
+  margin-bottom: 10px;
+  color: #ffffffa1;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::selection {
+  background: rgba(84, 82, 82, 0.544);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #e0e0e06c;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #3333337c;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #555555;
+}
+
+
+model-viewer{
+    height: inherit;
+    width: inherit;
+    border-color: rgb(71, 27, 27);
+   
+  animation: anim 1s linear infinite alternate;
+
+}
+
+@media screen and (max-width: 767px){
+  
+    .middlee{
+        width: 90vw;
+ height: 160vw;
+    }
+    
+}
+
+.HotspotAnnotation{
+  background-color: rgba(0, 127, 238, 0);
+  border-style: none;
+}
+.Hotspot{
+  background-color: rgba(0, 0, 0, 0.098);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2.5vw;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  border-style: none;
+  filter: drop-shadow(0px 0px 30px rgb(0, 0, 0)); 
+}
+@media screen and (min-width:300px) and (max-width: 700px){
+  .Hotspot{
+    font-size: 5vw;
+  }
+}
+.Hotspot:hover{
+  font-size: 2.6vw;
+}
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
+.container {
+ 
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 35em;
+  max-width: 100vw;
+  z-index: -1;
+  background-blend-mode: soft-light;
+  background-size: cover;
+  height: 60vh;
+  background-position: center center;
+  padding: 2rem;
+}
+
+.bird {
+  background-image: url('http://www.iamramraj.com/demo/Flying_birds_CSS_animation_examples/bird-cells.svg');
+  background-size: auto 100%;
+  width: 88px;
+  height: 125px;
+ 
+  will-change: background-position;
+  -webkit-animation-name: fly-cycle;
+  animation-name: fly-cycle;
+  -webkit-animation-timing-function: steps(10);
+  animation-timing-function: steps(10);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.bird--one {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.bird--two {
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-delay: -0.75s;
+  animation-delay: -0.75s;
+}
+.bird--three {
+  -webkit-animation-duration: 1.25s;
+  animation-duration: 1.25s;
+  -webkit-animation-delay: -0.25s;
+  animation-delay: -0.25s;
+}
+.bird--four {
+  -webkit-animation-duration: 1.1s;
+  animation-duration: 1.1s;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.bird-container {
+  position: absolute;
+  top: 20%;
+  left: -7.5vw;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  will-change: transform;
+  -webkit-animation-name: fly-right-one;
+  animation-name: fly-right-one;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.bird-container--one {
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+}
+.bird-container--two {
+  -webkit-animation-duration: 16s;
+  animation-duration: 16s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.bird-container--three {
+  -webkit-animation-duration: 14.6s;
+  animation-duration: 14.6s;
+  -webkit-animation-delay: 9.5s;
+  animation-delay: 9.5s;
+}
+.bird-container--four {
+  -webkit-animation-duration: 16s;
+  animation-duration: 16s;
+  -webkit-animation-delay: 10.25s;
+  animation-delay: 10.25s;
+}
+@-webkit-keyframes fly-cycle {
+100% {
+background-position: -900px 0;
+}
+}
+@keyframes fly-cycle {
+100% {
+background-position: -900px 0;
+}
+}
+@-webkit-keyframes fly-right-one {
+0% {
+left: -10%;
+-webkit-transform: scale(0.3);
+transform: scale(0.3);
+}
+10% {
+left: 10%;
+-webkit-transform: translateY(2vh) scale(0.4);
+transform: translateY(2vh) scale(0.4);
+}
+20% {
+left: 30%;
+-webkit-transform: translateY(0vh) scale(0.5);
+transform: translateY(0vh) scale(0.5);
+}
+30% {
+left: 50%;
+-webkit-transform: translateY(4vh) scale(0.6);
+transform: translateY(4vh) scale(0.6);
+}
+40% {
+left: 70%;
+-webkit-transform: translateY(2vh) scale(0.6);
+transform: translateY(2vh) scale(0.6);
+}
+50% {
+left: 90%;
+-webkit-transform: translateY(0vh) scale(0.6);
+transform: translateY(0vh) scale(0.6);
+}
+60% {
+left: 110%;
+-webkit-transform: translateY(0vh) scale(0.6);
+transform: translateY(0vh) scale(0.6);
+}
+100% {
+left: 110%;
+opacity: 1;
+-webkit-transform: translateY(0vh) scale(0.6);
+transform: translateY(0vh) scale(0.6);
+}
+}
+@keyframes fly-right-one {
+0% {
+left: -10%;
+-webkit-transform: scale(0.3);
+transform: scale(0.3);
+}
+10% {
+left: 10%;
+-webkit-transform: translateY(2vh) scale(0.4);
+transform: translateY(2vh) scale(0.4);
+}
+20% {
+left: 30%;
+-webkit-transform: translateY(0vh) scale(0.5);
+transform: translateY(0vh) scale(0.5);
+}
+30% {
+left: 50%;
+-webkit-transform: translateY(4vh) scale(0.6);
+transform: translateY(4vh) scale(0.6);
+}
+40% {
+left: 70%;
+-webkit-transform: translateY(2vh) scale(0.6);
+transform: translateY(2vh) scale(0.6);
+}
+50% {
+left: 90%;
+-webkit-transform: translateY(0vh) scale(0.6);
+transform: translateY(0vh) scale(0.6);
+}
+60% {
+left: 110%;
+-webkit-transform: translateY(0vh) scale(0.6);
+transform: translateY(0vh) scale(0.6);
+}
+100% {
+left: 110%;
+opacity: 1;
+-webkit-transform: translateY(0vh) scale(0.6);
+transform: translateY(0vh) scale(0.6);
+}
+}
+@-webkit-keyframes fly-right-two {
+0% {
+left: -10%;
+opacity: 1;
+-webkit-transform: translateY(-2vh) scale(0.5);
+transform: translateY(-2vh) scale(0.5);
+}
+10% {
+left: 10%;
+-webkit-transform: translateY(0vh) scale(0.4);
+transform: translateY(0vh) scale(0.4);
+}
+20% {
+left: 30%;
+-webkit-transform: translateY(-4vh) scale(0.6);
+transform: translateY(-4vh) scale(0.6);
+}
+30% {
+left: 50%;
+-webkit-transform: translateY(1vh) scale(0.45);
+transform: translateY(1vh) scale(0.45);
+}
+40% {
+left: 70%;
+-webkit-transform: translateY(-2.5vh) scale(0.5);
+transform: translateY(-2.5vh) scale(0.5);
+}
+50% {
+left: 90%;
+-webkit-transform: translateY(0vh) scale(0.45);
+transform: translateY(0vh) scale(0.45);
+}
+51% {
+left: 110%;
+-webkit-transform: translateY(0vh) scale(0.45);
+transform: translateY(0vh) scale(0.45);
+}
+100% {
+left: 110%;
+-webkit-transform: translateY(0vh) scale(0.45);
+transform: translateY(0vh) scale(0.45);
+}
+}
+@keyframes fly-right-two {
+0% {
+left: -10%;
+opacity: 1;
+-webkit-transform: translateY(-2vh) scale(0.5);
+transform: translateY(-2vh) scale(0.5);
+}
+10% {
+left: 10%;
+-webkit-transform: translateY(0vh) scale(0.4);
+transform: translateY(0vh) scale(0.4);
+}
+20% {
+left: 30%;
+-webkit-transform: translateY(-4vh) scale(0.6);
+transform: translateY(-4vh) scale(0.6);
+}
+30% {
+left: 50%;
+-webkit-transform: translateY(1vh) scale(0.45);
+transform: translateY(1vh) scale(0.45);
+}
+40% {
+left: 70%;
+-webkit-transform: translateY(-2.5vh) scale(0.5);
+transform: translateY(-2.5vh) scale(0.5);
+}
+50% {
+left: 90%;
+-webkit-transform: translateY(0vh) scale(0.45);
+transform: translateY(0vh) scale(0.45);
+}
+51% {
+left: 110%;
+-webkit-transform: translateY(0vh) scale(0.45);
+transform: translateY(0vh) scale(0.45);
+}
+100% {
+left: 110%;
+-webkit-transform: translateY(0vh) scale(0.45);
+transform: translateY(0vh) scale(0.45);
+}
+}
+
+
+.rain{
+  height: 98vh;
+  background-image: url(rain.png);
+  animation: rain 0.3s linear infinite;
+}
+@keyframes rain{
+  0%{
+      background-position: 0% 0%;
+  }
+  100%{
+      background-position: 20% 100%;
+  }
+}
+.rain::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  top: -100px;
+  filter: hue-rotate(50%);
+  transform: rotate(180deg);
+  animation: lightining 4s linear infinite;
+  opacity: 1;
+}
