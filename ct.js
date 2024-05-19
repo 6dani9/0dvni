@@ -2,7 +2,9 @@
 function homei(){
     window.location.href="index.html";
 }
-
+function contacti(){
+    window.location.href="contact.html";
+}
 const sound = document.getElementById('hoverSound');
 const bckg=document.getElementById('rainbckg');
 const buttons = [];
