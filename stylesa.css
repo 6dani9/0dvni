@@ -90,7 +90,7 @@ model-viewer{
 }
 .Hotspot{
   background-color: rgba(0, 0, 0, 0.098);
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2.5vw;
   border-radius: 15px;
   color: rgb(255, 255, 255);
